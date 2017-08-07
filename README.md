@@ -32,14 +32,14 @@ http://www.tkc8.com/test/pic/index.html
             base64Image({
                 file: me,                              /*【必填】对应的上传元素 */
                 callback: function (imageUrl) {        /*【必填】处理成功后的回调函数 */
-				
-					/*imageUrl为得到的图片base64数据，这里可以进行上传到服务器或者其他逻辑操作 */
-					var img = new Image();
-					img.src = imageUrl;
+			
+                    /*imageUrl为得到的图片base64数据，这里可以进行上传到服务器或者其他逻辑操作 */
+                    var img = new Image();
+                    img.src = imageUrl;
                     $("#image-list").append(img);       
                 },
-				width:750,                          /*【选填】宽度默认750，如果图片尺寸大于该宽度，图片将被设置为该宽度*/
-				ratio:0.75,                         /*【选填】压缩率默认0.75 */
+                width:750,                          /*【选填】宽度默认750，如果图片尺寸大于该宽度，图片将被设置为该宽度*/
+                ratio:0.75,                         /*【选填】压缩率默认0.75 */
             });
         };
     </script>
