@@ -1,4 +1,3 @@
-# Alpaca-Spa-Laravel
 
 ## 简介
 
@@ -9,7 +8,7 @@ JS前端上传图片、压缩、并且处理旋转问题，生成base64数据
 http://www.tkc8.com/test/pic/index.html
 
 
-## 目录结构
+## 示例代码
 
 ```
 
