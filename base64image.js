@@ -29,7 +29,7 @@ var base64Image = function (param) {
     };
     reader.onload = function () {
         /*创建新的图片JS对象*/
-        $('#file-up').val('');
+        document.getElementById("file-up").value="";
 
         /*创建新的图片JS对象*/
         var image    = new Image();
