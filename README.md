@@ -22,7 +22,7 @@ http://www.tkc8.com/test/pic/index.html
 </head>
 <body>
     <input type="file" style="display: none" onchange="fileUp(this)" id="file-up">
-    <input type="button" value="点我上传图片"  onclick="$('#file-up').click();" />
+    <input type="button" value="点我上传图片" onclick="document.getElementById('file-up').click();"/>
     <div id='image-list'></div>
 
     <script>
