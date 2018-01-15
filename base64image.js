@@ -1,5 +1,7 @@
 var base64Image = function (param) {
 
+
+    
     var fileInput = param.file;
 
     var widthInput = param.width ? param.width : 750;
@@ -7,7 +9,7 @@ var base64Image = function (param) {
     var ratioInput = param.ratio ? param.ratio : 0.75;
 
     var callback = param.callback ? param.callback : null;
-
+   		
     if (!window.FileReader) {
         alert("请升级浏览器");
         return;
@@ -29,7 +31,7 @@ var base64Image = function (param) {
     };
     reader.onload = function () {
         /*创建新的图片JS对象*/
-        document.getElementById("file-up").value="";
+        fileInput.value="";
 
         /*创建新的图片JS对象*/
         var image    = new Image();
